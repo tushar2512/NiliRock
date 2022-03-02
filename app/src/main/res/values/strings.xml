@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NiliRock</string>
+    <string name="login_title">Login</string>
+    <string name="login_page_message">Please Enter Your Login Details</string>
+    <string name="email">Email</string>
+    <string name="password_title">PASSWORD</string>
+    <string name="remember_me_title">Remember Me</string>
+    <string name="forgot_password_title">Forgot Password?</string>
+    <string name="continue_title">Continue</string>
+    <string name="athlete_title">Athlete</string>
+    <string name="company_title">Company</string>
+    <string name="have_and_account_title">Have and Account?</string>
+    <string name="choose_your_avatar">Choose your avatar</string>
+    <string name="title_dont_have_an_account">Don"'"t have an account ? </string>
+    <string name="title_register"><u>Register</u></string>
+    <string name="letsRegister_title">Let"'"s Register</string>
+    <string name="register_page_message">By Creating an account,you will be able \n access your account</string>
+
+</resources>

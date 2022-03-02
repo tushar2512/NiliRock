@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background">
+
+    <ImageView
+        android:id="@+id/imgViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name" />
+
+
+    <TextView
+        android:id="@+id/txtViewLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/login_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewLogo" />
+
+
+    <TextView
+        android:id="@+id/txtViewLoginMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/adamina"
+        android:minLines="1"
+        android:text="@string/login_page_message"
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="@dimen/_14sdp"
+        app:autoSizeMinTextSize="@dimen/_12sdp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLoginTitle" />
+
+    <ImageView
+        android:id="@+id/imgViewEmail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/email"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLoginMessage"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txtViewUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:autoSizeMaxTextSize="@dimen/_18sdp"
+        app:autoSizeMinTextSize="@dimen/_12sdp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgViewEmail"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLoginMessage" />
+
+    <ImageView
+        android:id="@+id/imgViewPassword"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/password"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewUserName"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txtViewPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/password_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:autoSizeMaxTextSize="@dimen/_16sdp"
+        app:autoSizeMinTextSize="@dimen/_12sdp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewUserName" />
+
+    <ImageView
+        android:id="@+id/imgViewEye"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/eye"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewUserName"
+        app:layout_constraintTop_toTopOf="@+id/txtViewPassword"
+        android:contentDescription="@string/app_name" />
+
+    <CheckBox
+        android:id="@+id/chkBoxRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_me_title"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@+id/imgViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewPassword" />
+
+    <TextView
+        android:id="@+id/txtViewForfotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password_title"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/chkBoxRememberMe"
+        app:layout_constraintEnd_toEndOf="@+id/imgViewEye"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewPassword" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/drawable_button_background"
+        android:fontFamily="@font/adamina"
+        android:text="@string/continue_title"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkBoxRememberMe"
+        app:rippleColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/txtViewDontHaveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/title_dont_have_an_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_register"
+        android:textColor="@color/yellow_color"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewDontHaveAcc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/txtViewDontHaveAcc"
+        app:layout_constraintTop_toTopOf="@+id/txtViewDontHaveAcc"
+        app:layout_constraintVertical_bias="0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
